@@ -39,7 +39,14 @@ function copyDirSync(src, dest) {
   }
 }
 
-// 3. Copy static assets
+// 3. Ensure round favicons are freshly built
+try {
+  execSync('node scripts/generate-round-favicons.js', { cwd: ROOT_DIR, stdio: 'inherit' });
+} catch (e) {
+  console.warn('Could not run generate-round-favicons.js automatically:', e.message);
+}
+
+// 4. Copy static assets
 console.log('Copying static assets (fonts, images, icons, configs)...');
 copyDirSync(path.join(SRC_DIR, 'assets', 'fonts'), path.join(DIST_DIR, 'assets', 'fonts'));
 copyDirSync(path.join(SRC_DIR, 'assets', 'img'), path.join(DIST_DIR, 'assets', 'img'));
@@ -538,13 +545,20 @@ try {
   process.exit(1);
 }
 
-// 7. Sync dist files to workspace root for Live Server compatibility
-console.log('Syncing dist output to workspace root for IDE Live Server compatibility...');
+// 7. Sync dist files to workspace root for Live Server and GitHub Pages compatibility
+console.log('Syncing dist output to workspace root for IDE Live Server & GitHub Pages compatibility...');
 copyDirSync(path.join(DIST_DIR, 'assets'), path.join(ROOT_DIR, 'assets'));
 pages.forEach(p => {
   const distFile = path.join(DIST_DIR, p.filename);
   if (fs.existsSync(distFile)) {
     fs.copyFileSync(distFile, path.join(ROOT_DIR, p.filename));
+  }
+});
+const rootSyncFiles = ['favicon.ico', 'manifest.webmanifest', 'sw.js', 'robots.txt', 'sitemap.xml', 'send.php'];
+rootSyncFiles.forEach(f => {
+  const distF = path.join(DIST_DIR, f);
+  if (fs.existsSync(distF)) {
+    fs.copyFileSync(distF, path.join(ROOT_DIR, f));
   }
 });
 
