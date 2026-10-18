@@ -52,7 +52,13 @@ body {
 
 .stroke-r {
   color: transparent;
-  -webkit-text-stroke: 2px var(--red);
+  -webkit-text-stroke: 1.5px var(--red);
+}
+
+@media (min-width: 640px) {
+  .stroke-r {
+    -webkit-text-stroke: 2px var(--red);
+  }
 }
 
 .stroke-k {
@@ -185,8 +191,8 @@ body {
 /* ---------- Scroll Reveal ---------- */
 .rv {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity .9s ease, transform .9s cubic-bezier(.2, .8, .2, 1);
+  transform: translateY(20px);
+  transition: opacity .5s ease, transform .5s cubic-bezier(.2, .8, .2, 1);
   transition-delay: var(--d, 0s);
 }
 

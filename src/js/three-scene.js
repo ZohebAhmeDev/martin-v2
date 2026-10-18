@@ -225,7 +225,7 @@ export function initHeroScene() {
     camera.aspect = w / h;
     const k = Math.max(1, 1.2 / camera.aspect);
     camBase.copy(base).multiplyScalar(Math.min(k, 1.75));
-    if (camera.aspect > 1.3) root.position.set(5.5, 2.4, 0); else root.position.set(0, 4.2, 0);
+    if (camera.aspect > 1.3) root.position.set(5.5, 2.4, 0); else root.position.set(0, 3.2, 0);
     camera.position.copy(camBase);
     camera.lookAt(0, 0.4, 0);
     camera.updateProjectionMatrix();
