@@ -1,0 +1,60 @@
+{
+  "name": "Martin Engineering",
+  "short_name": "Martin Eng",
+  "description": "Manufacturer of industrial weighbridges, pitless & pit type truck scales, tank weighing systems, and load cells in India since 1998.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "lang": "en-IN",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Call Us",
+      "short_name": "Call",
+      "description": "Call Martin Engineering directly",
+      "url": "tel:+919811535035",
+      "icons": [{ "src": "/assets/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "WhatsApp Us",
+      "short_name": "WhatsApp",
+      "description": "Chat with our engineering team on WhatsApp",
+      "url": "https://wa.me/919811535035?text=Hello%20Martin%20Engineering%2C%20I%20would%20like%20a%20quote%20for%20a%20weighbridge.",
+      "icons": [{ "src": "/assets/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Products",
+      "short_name": "Products",
+      "description": "View our weighbridge and scale catalog",
+      "url": "/#products",
+      "icons": [{ "src": "/assets/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martin Engineering</title>
+<meta name="description" content="Martin Engineering &amp; Trading Co., manufacturer of weighbridges in India since 1998. Pitless and pit type weighbridges, tank weighing systems, weighing scales and load cells. ISO 9001 certified.">
+<meta name="google-site-verification" content="ULF4zmHbM7jnqBC2epiKeEZS0wfyaHVB-6bFg_TcarI">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: { colors: { brand: '#E3000F' }, fontFamily: { sans: ['Archivo', 'system-ui', 'sans-serif'] } } }
+  };
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Martin Engineering & Trading Co.",
+  "image": "https://martinengineering.in/images/logo.png",
+  "url": "https://martinengineering.in/",
+  "telephone": "+919811535035",
+  "email": "martinengg.gzb@gmail.com",
+  "foundingDate": "1998",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "AO-133, Amrit Steel Compound, South Side of G.T. Road, UPSIDC Industrial Area, Bulandshahr Road Industrial Area",
+    "addressLocality": "Ghaziabad",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201009",
+    "addressCountry": "IN"
+  }
+}
+</script>
+<noscript><style>.rv{opacity:1!important;transform:none!important}.dw *{stroke-dashoffset:0!important}.rl>span{transform:none!important}</style></noscript>
+<style>
+  :root { --red:#E3000F; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Archivo',system-ui,sans-serif; color:#000; background:#000; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+  .wide  { font-stretch:112%; }
+  .xwide { font-stretch:125%; }
+  .tabular { font-variant-numeric:tabular-nums; }
+  :focus-visible { outline:3px solid var(--red); outline-offset:3px; }
+  .stroke-w { color:transparent; -webkit-text-stroke:1.5px #fff; }
+  .stroke-r { color:transparent; -webkit-text-stroke:2px var(--red); }
+  .stroke-k { color:transparent; -webkit-text-stroke:2px #000; }
+
+  /* ---------- hero ---------- */
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(ellipse at 65% 55%, #000 15%, transparent 75%);
+            mask-image:radial-gradient(ellipse at 65% 55%, #000 15%, transparent 75%);
+  }
+  .hero-glow { background:radial-gradient(900px 520px at 72% 62%, rgba(227,0,15,.30), transparent 65%); }
+  .rl { display:block; overflow:hidden; padding-bottom:.1em; margin-bottom:-.1em; }
+  .rl > span { display:block; transform:translateY(112%); animation:rise 1s cubic-bezier(.2,.8,.2,1) forwards; }
+  .rl:nth-child(2) > span { animation-delay:.14s; }
+  .rl:nth-child(3) > span { animation-delay:.28s; }
+  @keyframes rise { to { transform:translateY(0); } }
+
+  .corner-mark { position:absolute; width:26px; height:26px; border-color:rgba(255,255,255,.45); pointer-events:none; }
+  .tag { position:absolute; left:0; top:0; z-index:2; display:flex; align-items:center; pointer-events:none; color:#fff; font-size:12px; font-weight:600; will-change:transform; transition:opacity .25s; }
+  .tag i { width:9px; height:9px; border:2px solid var(--red); background:#000; flex:none; }
+  .tag b { width:34px; height:1px; background:var(--red); flex:none; }
+  .tag span { background:rgba(0,0,0,.65); border:1px solid rgba(255,255,255,.28); padding:3px 9px; backdrop-filter:blur(4px); white-space:nowrap; }
+  @media (max-width:640px) { .tag { display:none; } }
+
+  .blink { width:8px; height:8px; background:var(--red); display:inline-block; animation:blink 1.2s steps(2,end) infinite; }
+  @keyframes blink { 50% { opacity:.15; } }
+  .bar { position:absolute; inset:0; background:var(--red); transform:scaleY(.04); transform-origin:bottom; }
+
+  /* ---------- marquee ---------- */
+  .marq-track { animation:marq 34s linear infinite; }
+  .marq:hover .marq-track { animation-play-state:paused; }
+  @keyframes marq { to { transform:translateX(-50%); } }
+
+  /* ---------- scroll reveal ---------- */
+  .rv { opacity:0; transform:translateY(30px); transition:opacity .9s ease, transform .9s cubic-bezier(.2,.8,.2,1); transition-delay:var(--d,0s); }
+  .rv.in { opacity:1; transform:none; }
+
+  /* ---------- product cards ---------- */
+  .pcard { position:relative; overflow:hidden; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.14); color:#fff; transition:border-color .3s, background-color .3s; }
+  .pcard::before { content:''; position:absolute; inset:0; pointer-events:none; opacity:0; transition:opacity .3s;
+    background:radial-gradient(460px circle at var(--mx,50%) var(--my,50%), rgba(227,0,15,.32), transparent 62%); }
+  .pcard.rv { transition:opacity .9s ease, transform .9s cubic-bezier(.2,.8,.2,1), border-color .3s, background-color .3s; transition-delay:var(--d,0s), var(--d,0s), 0s, 0s; }
+  .pcard:hover, .pcard:focus-visible { border-color:var(--red); background:rgba(255,255,255,.05); }
+  .pcard:hover::before, .pcard:focus-visible::before { opacity:1; }
+  .pcard svg { width:100%; height:auto; position:relative; }
+  .pcard .acc { stroke:var(--red); }
+  .pcard .kmark { position:absolute; top:0; left:0; width:22px; height:22px; border-top:3px solid var(--red); border-left:3px solid var(--red); transition:width .35s, height .35s; }
+  .pcard:hover .kmark { width:44px; height:44px; }
+  .pcard .rule { display:block; height:2px; width:28px; background:var(--red); transition:width .35s; }
+  .pcard:hover .rule { width:76px; }
+  .dw * { stroke-dasharray:1; stroke-dashoffset:1; }
+  .in .dw * { animation:draw 1.9s ease forwards; }
+  @keyframes draw { to { stroke-dashoffset:0; } }
+
+  .mapframe { filter:grayscale(1) contrast(1.15) invert(.92) hue-rotate(180deg); transition:filter .4s; }
+  .mapframe:hover { filter:none; }
+  .photo { filter:grayscale(1) contrast(1.05); transition:filter .45s, transform .45s; }
+  .photo:hover { filter:none; }
+  .cut { clip-path:polygon(0 0, 91% 0, 100% 9%, 100% 100%, 9% 100%, 0 91%); }
+
+  .grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(0,0,0,.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,.07) 1px, transparent 1px);
+    background-size:56px 56px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    *, *::before, *::after { animation:none !important; transition:none !important; }
+    .rl > span { transform:none; }
+    .rv { opacity:1; transform:none; }
+    .dw * { stroke-dashoffset:0; }
+  }
+</style>
+</head>
+<body>
+<div id="progress" class="fixed left-0 top-0 z-[70] h-[3px] w-full origin-left scale-x-0 bg-brand"></div>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[80] focus:bg-white focus:px-4 focus:py-2 focus:text-black">Skip to content</a>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-white/10 bg-black/75 text-white backdrop-blur-md">
+  <div class="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8">
+    <a href="#" aria-label="Martin Engineering home" data-track="logo_click" class="bg-white px-3 py-1.5">
+      <img src="https://martinengineering.in/images/logo.png" alt="Martin Engineering" class="h-9 w-auto sm:h-10">
+    </a>
+
+    <nav class="hidden items-center gap-9 text-[15px] font-semibold lg:flex" aria-label="Main">
+      <a href="#" class="hover:text-brand">Home</a>
+      <div class="group relative">
+        <button class="flex items-center gap-1.5 hover:text-brand" aria-haspopup="true">Products
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="invisible absolute left-0 top-full pt-3 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+          <div class="w-[340px] border border-white bg-black p-2 shadow-[8px_8px_0_#E3000F]">
+            <a class="block px-4 py-3 hover:bg-brand" href="https://martinengineering.in/pitless.html" data-track="nav_pitless">Pitless Type Weighbridges</a>
+            <a class="block px-4 py-3 hover:bg-brand" href="https://martinengineering.in/pittype.html" data-track="nav_pittype">Pit Type RCC Weighbridge</a>
+            <a class="block px-4 py-3 hover:bg-brand" href="https://martinengineering.in/tank.html" data-track="nav_tank">Tank Weighing System Compression Weigh Modules</a>
+            <a class="block px-4 py-3 hover:bg-brand" href="https://martinengineering.in/scales.html" data-track="nav_scales">Weighing Scales</a>
+            <a class="block px-4 py-3 hover:bg-brand" href="https://martinengineering.in/loadcell.html" data-track="nav_loadcell">Loadcell</a>
+          </div>
+        </div>
+      </div>
+      <a href="https://martinengineering.in/aboutus.html" class="hover:text-brand">About Us</a>
+      <a href="https://martinengineering.in/services.html" class="hover:text-brand">Services</a>
+      <a href="https://martinengineering.in/contactus.html" class="hover:text-brand">Contact Us</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/919811535035" data-track="whatsapp_header" class="hidden bg-brand px-5 py-3 text-sm font-bold text-white transition hover:bg-white hover:text-black sm:inline-block">WhatsApp us</a>
+      <button id="menuBtn" class="grid h-11 w-11 place-items-center border border-white/60 lg:hidden" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 1h20M0 7h20M0 13h20"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="hidden border-t border-white/10 bg-black lg:hidden">
+    <div class="mx-auto flex max-w-[1440px] flex-col px-5 py-3 text-lg font-semibold sm:px-8">
+      <a class="border-b border-white/10 py-3" href="#">Home</a>
+      <a class="border-b border-white/10 py-3" href="#products">Products</a>
+      <a class="border-b border-white/10 py-3" href="https://martinengineering.in/aboutus.html">About Us</a>
+      <a class="border-b border-white/10 py-3" href="https://martinengineering.in/services.html">Services</a>
+      <a class="border-b border-white/10 py-3" href="https://martinengineering.in/contactus.html">Contact Us</a>
+      <a class="my-4 bg-brand py-3 text-center font-bold" href="https://wa.me/919811535035" data-track="whatsapp_mobile_menu">WhatsApp us</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="relative isolate flex min-h-[calc(100svh-76px)] items-end overflow-hidden bg-black text-white" data-section="hero">
+  <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+  <div class="hero-glow absolute inset-0 -z-10" aria-hidden="true"></div>
+
+  <div id="scene" class="absolute inset-0 -z-[5]" role="img" aria-label="Animated 3D wireframe of a truck being weighed on a weighbridge">
+    <div class="tag" data-a="cell"><i></i><b></b><span>Load cell</span></div>
+    <div class="tag" data-a="platform"><i></i><b></b><span>Platform</span></div>
+    <div class="tag" data-a="ramp"><i></i><b></b><span>Approach ramp</span></div>
+    <div class="tag" data-a="truck"><i></i><b></b><span>Vehicle</span></div>
+  </div>
+  <div class="pointer-events-none absolute inset-0 -z-[4] bg-gradient-to-r from-black via-black/55 to-transparent lg:via-black/40" aria-hidden="true"></div>
+  <div class="pointer-events-none absolute inset-x-0 bottom-0 -z-[4] h-48 bg-gradient-to-t from-black to-transparent" aria-hidden="true"></div>
+
+  <span class="corner-mark left-5 top-5 border-l-2 border-t-2 sm:left-8 sm:top-8"></span>
+  <span class="corner-mark right-5 top-5 border-r-2 border-t-2 sm:right-8 sm:top-8"></span>
+  <span class="corner-mark bottom-5 left-5 border-b-2 border-l-2 sm:bottom-8 sm:left-8"></span>
+  <span class="corner-mark bottom-5 right-5 border-b-2 border-r-2 sm:bottom-8 sm:right-8"></span>
+
+  <div class="relative mx-auto w-full max-w-[1440px] px-5 pb-16 pt-24 sm:px-8 sm:pb-20">
+    <p class="mb-7 flex items-center gap-3 text-sm font-semibold text-white/75"><span class="h-[3px] w-12 bg-brand"></span>Martin Engineering &amp; Trading Co.</p>
+    <h1 class="font-black leading-[0.95] tracking-[-0.03em]">
+      <span class="rl text-[clamp(2.7rem,9.4vw,9.5rem)]"><span>Weighbridges</span></span>
+      <span class="rl wide stroke-w mt-2 text-[clamp(1.6rem,4.3vw,4.4rem)] tracking-[-0.02em]"><span>manufactured in India</span></span>
+      <span class="rl wide mt-1 text-[clamp(1.6rem,4.3vw,4.4rem)] tracking-[-0.02em] text-brand"><span>since 1998.</span></span>
+    </h1>
+    <div class="mt-10 flex flex-wrap items-center gap-3">
+      <a href="#products" data-track="hero_view_products" class="bg-brand px-8 py-4 font-bold transition hover:bg-white hover:text-black">View products</a>
+      <a href="tel:+919811535035" data-track="hero_call" class="border border-white/70 px-8 py-4 font-bold transition hover:bg-white hover:text-black">Call +91 98115 35035</a>
+    </div>
+  </div>
+
+  <!-- telemetry HUD -->
+  <div class="absolute right-5 top-5 z-10 w-[250px] sm:right-8 sm:top-8 lg:bottom-12 lg:top-auto lg:w-[320px]" aria-hidden="true">
+    <div class="border border-white/20 bg-black/55 p-4 backdrop-blur-md">
+      <div class="flex items-center justify-between gap-3 text-xs text-white/65">
+        <span class="flex items-center gap-2"><i class="blink"></i>Weighing simulation</span>
+      </div>
+      <p id="tStatus" class="mt-2 text-sm font-semibold">Vehicle approaching</p>
+      <div class="mt-1 flex items-baseline gap-2">
+        <span id="tWeight" class="tabular xwide text-4xl font-black leading-none lg:text-5xl">0</span>
+        <span class="text-white/60">kg</span>
+      </div>
+      <div id="tBars" class="mt-4 flex h-10 items-stretch gap-1.5">
+        <span class="relative flex-1 bg-white/10"><i class="bar"></i></span>
+        <span class="relative flex-1 bg-white/10"><i class="bar"></i></span>
+        <span class="relative flex-1 bg-white/10"><i class="bar"></i></span>
+        <span class="relative flex-1 bg-white/10"><i class="bar"></i></span>
+        <span class="relative flex-1 bg-white/10"><i class="bar"></i></span>
+        <span class="relative flex-1 bg-white/10"><i class="bar"></i></span>
+      </div>
+      <div class="mt-1.5 flex justify-between text-[10px] text-white/50"><span>Load cell 1</span><span>Load cell 6</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marq overflow-hidden bg-brand text-white" aria-label="What we make">
+  <div class="marq-track flex w-max">
+    <div class="flex shrink-0 items-center py-5" aria-hidden="false">
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Pitless type weighbridges</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Pit type RCC weighbridge</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Tank weighing systems</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Weighing scales</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Loadcell</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">ISO 9001 certified</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+    </div>
+    <div class="flex shrink-0 items-center py-5" aria-hidden="true">
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Pitless type weighbridges</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Pit type RCC weighbridge</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Tank weighing systems</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Weighing scales</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">Loadcell</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+      <span class="xwide px-8 text-3xl font-black sm:text-4xl">ISO 9001 certified</span><i class="h-3 w-3 shrink-0 bg-black"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="grid-dark relative overflow-hidden bg-white text-black" data-section="about">
+  <span class="stroke-r xwide pointer-events-none absolute -right-6 -top-6 select-none text-[11rem] font-black leading-none opacity-70 sm:text-[20rem]" aria-hidden="true">1998</span>
+  <div class="relative mx-auto max-w-[1440px] px-5 py-24 sm:px-8 lg:py-32">
+    <p class="rv flex items-center gap-3 text-sm font-bold"><span class="h-[3px] w-12 bg-brand"></span>About us</p>
+    <p class="rv wide mt-8 max-w-5xl text-[clamp(1.8rem,4.2vw,4rem)] font-black leading-[1.08] tracking-[-0.025em]" style="--d:.08s">
+      Since our establishment in 1998, we have earned a reputation for <span class="bg-black px-2 text-white">credibility and trust</span> among our clients.
+    </p>
+
+    <div class="mt-16 grid items-start gap-14 lg:grid-cols-12">
+      <div class="rv relative lg:col-span-5" style="--d:.1s">
+        <div class="absolute -bottom-5 -left-5 h-2/3 w-2/3 bg-brand" aria-hidden="true"></div>
+        <img src="https://martinengineering.in/images/martin%20factory.png" alt="Martin Engineering factory" class="cut relative w-full bg-black object-cover" loading="lazy">
+      </div>
+      <div class="lg:col-span-7">
+        <p class="rv max-w-[42rem] text-lg leading-[1.8] text-black/80">
+          As a distinguished manufacturer of weighbridges in India, Martin Engineering &amp; Trading Co. is committed to providing top-quality products and ensuring client satisfaction. Since our establishment in 1998, we have earned a reputation for credibility and trust among our clients. Our company is dedicated to producing the highest quality weighbridges and electronic weighbridges, which provide accurate measurement output and exceptional weighing performance. With a nationwide marketing and supply chain, we have become a renowned name in the Indian market. Additionally, we are proud to be an ISO 9001 certified company, demonstrating our commitment to quality and excellence.
+        </p>
+        <a href="https://martinengineering.in/aboutus.html" data-track="about_more" class="rv group mt-9 inline-flex items-center gap-4 font-bold" style="--d:.1s">
+          More
+          <span class="block h-[3px] w-12 bg-brand transition-all group-hover:w-24"></span>
+        </a>
+        <div class="mt-14 grid gap-px bg-black/15 sm:grid-cols-3">
+          <div class="rv bg-white p-6" style="--d:.05s"><p class="xwide text-4xl font-black text-brand">1998</p><p class="mt-2 text-sm font-semibold">Established</p></div>
+          <div class="rv bg-white p-6" style="--d:.15s"><p class="xwide text-4xl font-black">ISO 9001</p><p class="mt-2 text-sm font-semibold">Certified company</p></div>
+          <div class="rv bg-white p-6" style="--d:.25s"><p class="xwide text-4xl font-black">India</p><p class="mt-2 text-sm font-semibold">Nationwide supply chain</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="relative overflow-hidden bg-black text-white" data-section="products">
+  <div class="hero-glow absolute inset-0 opacity-60" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-[1440px] px-5 py-24 sm:px-8 lg:py-32">
+    <div class="mb-14 flex items-end justify-between gap-6">
+      <h2 class="rv wide text-[clamp(3rem,9vw,8rem)] font-black leading-none tracking-[-0.035em]">Products</h2>
+      <a href="https://martinengineering.in/loadcell.html" data-track="products_loadcell" class="group hidden items-center gap-4 pb-3 font-bold sm:inline-flex">Loadcell <span class="block h-[3px] w-12 bg-brand transition-all group-hover:w-24"></span></a>
+    </div>
+
+    <div class="grid gap-4 lg:grid-cols-6">
+
+      <a href="https://martinengineering.in/pitless.html" data-track="product_pitless" class="pcard rv group flex min-h-[380px] flex-col justify-between p-7 lg:col-span-4 lg:p-10">
+        <span class="kmark" aria-hidden="true"></span>
+        <svg viewBox="0 0 400 150" fill="none" stroke="currentColor" stroke-width="1.5" class="dw mx-auto max-w-[620px] opacity-90" aria-hidden="true">
+          <path pathLength="1" d="M14 118 L58 106 L342 106 L386 118"/>
+          <rect pathLength="1" x="58" y="92" width="284" height="14"/>
+          <path pathLength="1" d="M74 92v14M90 92v14M106 92v14M122 92v14M138 92v14M154 92v14M170 92v14M186 92v14M202 92v14M218 92v14M234 92v14M250 92v14M266 92v14M282 92v14M298 92v14M314 92v14M330 92v14"/>
+          <path pathLength="1" d="M82 106v18M200 106v18M318 106v18M70 124h24M188 124h24M306 124h24"/>
+          <path pathLength="1" d="M0 124h400"/>
+          <rect class="acc" pathLength="1" x="77" y="106" width="10" height="7"/>
+          <rect class="acc" pathLength="1" x="195" y="106" width="10" height="7"/>
+          <rect class="acc" pathLength="1" x="313" y="106" width="10" height="7"/>
+          <path class="acc" pathLength="1" d="M58 70h284M58 64v12M342 64v12"/>
+        </svg>
+        <div class="relative mt-10">
+          <h3 class="wide max-w-xl text-2xl font-extrabold leading-snug sm:text-3xl">Full steel platform weighbridges, pitless type</h3>
+          <span class="mt-6 inline-flex items-center gap-4 text-sm font-bold">View details <i class="rule"></i></span>
+        </div>
+      </a>
+
+      <a href="https://martinengineering.in/pittype.html" data-track="product_pittype" class="pcard rv group flex min-h-[380px] flex-col justify-between p-7 lg:col-span-2 lg:p-10" style="--d:.1s">
+        <span class="kmark" aria-hidden="true"></span>
+        <svg viewBox="0 0 400 150" fill="none" stroke="currentColor" stroke-width="1.8" class="dw mx-auto opacity-90" aria-hidden="true">
+          <path pathLength="1" d="M10 66H108M292 66H390"/>
+          <path pathLength="1" d="M108 66V132H292V66"/>
+          <rect pathLength="1" x="116" y="60" width="168" height="10"/>
+          <path pathLength="1" d="M146 82V132M254 82V132"/>
+          <path pathLength="1" d="M100 80l-9 9M100 98l-9 9M100 116l-9 9M300 80l9 9M300 98l9 9M300 116l9 9"/>
+          <rect class="acc" pathLength="1" x="139" y="72" width="14" height="10"/>
+          <rect class="acc" pathLength="1" x="247" y="72" width="14" height="10"/>
+        </svg>
+        <div class="relative mt-10">
+          <h3 class="wide text-2xl font-extrabold leading-snug sm:text-3xl">Pit type RCC weighbridge</h3>
+          <span class="mt-6 inline-flex items-center gap-4 text-sm font-bold">View details <i class="rule"></i></span>
+        </div>
+      </a>
+
+      <a href="https://martinengineering.in/scales.html" data-track="product_scales" class="pcard rv group flex min-h-[380px] flex-col justify-between p-7 lg:col-span-2 lg:p-10">
+        <span class="kmark" aria-hidden="true"></span>
+        <svg viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.8" class="dw mx-auto max-w-[230px] opacity-90" aria-hidden="true">
+          <circle pathLength="1" cx="100" cy="16" r="8"/>
+          <path pathLength="1" d="M100 24V42"/>
+          <rect pathLength="1" x="72" y="42" width="56" height="42"/>
+          <rect pathLength="1" x="80" y="50" width="40" height="16"/>
+          <path class="acc" pathLength="1" d="M86 58h28"/>
+          <path pathLength="1" d="M100 84V104C100 126 76 126 76 108"/>
+          <path pathLength="1" d="M88 74h24"/>
+        </svg>
+        <div class="relative mt-10">
+          <h3 class="wide text-2xl font-extrabold leading-snug sm:text-3xl">Hanging weighing scale</h3>
+          <span class="mt-6 inline-flex items-center gap-4 text-sm font-bold">View details <i class="rule"></i></span>
+        </div>
+      </a>
+
+      <a href="https://martinengineering.in/tank.html" data-track="product_tank" class="pcard rv group flex min-h-[380px] flex-col justify-between p-7 lg:col-span-4 lg:p-10" style="--d:.1s">
+        <span class="kmark" aria-hidden="true"></span>
+        <svg viewBox="0 0 400 150" fill="none" stroke="currentColor" stroke-width="1.5" class="dw mx-auto max-w-[620px] opacity-90" aria-hidden="true">
+          <ellipse pathLength="1" cx="200" cy="26" rx="72" ry="10"/>
+          <path pathLength="1" d="M128 26V98M272 26V98"/>
+          <path pathLength="1" d="M128 98A72 10 0 0 0 272 98"/>
+          <path pathLength="1" d="M128 64A72 10 0 0 0 272 64"/>
+          <path pathLength="1" d="M152 108V124M248 108V124M200 112V124"/>
+          <path pathLength="1" d="M60 134H340"/>
+          <rect class="acc" pathLength="1" x="143" y="124" width="18" height="10"/>
+          <rect class="acc" pathLength="1" x="239" y="124" width="18" height="10"/>
+          <rect class="acc" pathLength="1" x="191" y="124" width="18" height="10"/>
+          <path class="acc" pathLength="1" d="M290 26h40M290 98h40M310 26v72"/>
+        </svg>
+        <div class="relative mt-10">
+          <h3 class="wide max-w-xl text-2xl font-extrabold leading-snug sm:text-3xl">Tank weighing system, compression weigh modules</h3>
+          <span class="mt-6 inline-flex items-center gap-4 text-sm font-bold">View details <i class="rule"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="relative overflow-hidden bg-brand text-white" data-section="expertise">
+  <span class="stroke-k xwide pointer-events-none absolute -left-4 bottom-[-3rem] select-none text-[9rem] font-black leading-none opacity-25 sm:text-[17rem]" aria-hidden="true">Expert</span>
+  <div class="relative mx-auto grid max-w-[1440px] items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-12 lg:py-32">
+    <div class="lg:col-span-7">
+      <p class="rv flex items-center gap-3 text-sm font-bold"><span class="h-[3px] w-12 bg-white"></span>Unparalleled Expertise</p>
+      <h2 class="rv wide mt-7 max-w-3xl text-[clamp(2rem,4.6vw,4.4rem)] font-black leading-[1.04] tracking-[-0.03em]" style="--d:.08s">Experience to provide the right solutions for your business</h2>
+      <p class="rv mt-9 max-w-[40rem] text-lg leading-[1.8] text-white/90" style="--d:.12s">
+        Our team of experienced engineers has decades of combined experience in the industry, allowing us to provide you with the best possible solutions that are tailored to meet your exact requirements. We use the latest technologies and cutting-edge methods to develop innovative solutions that are both cost-effective and reliable. Our team is always up-to-date on new market trends, ensuring that we deliver only the best results.
+      </p>
+      <img src="https://martinengineering.in/images/img-9.png" alt="Martin Engineering team expertise" class="rv mt-10 max-h-56 w-auto border-4 border-black bg-white object-cover" loading="lazy" style="--d:.16s">
+    </div>
+    <div class="rv relative lg:col-span-5" style="--d:.1s">
+      <div id="mini" class="relative h-[360px] w-full border border-white/40 bg-black sm:h-[460px]" role="img" aria-label="Rotating 3D wireframe of a load cell">
+        <div class="absolute left-4 top-4 z-10 flex items-center gap-2 text-xs font-semibold text-white/80"><i class="blink"></i>Load cell, wireframe</div>
+        <span class="corner-mark bottom-3 right-3 border-b-2 border-r-2"></span>
+        <span class="corner-mark left-3 top-3 border-l-2 border-t-2" style="top:.75rem"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<section class="grid grid-cols-2 bg-black md:grid-cols-4" aria-label="Project photos">
+  <img class="photo h-44 w-full object-cover md:h-72" src="https://martinengineering.in/images/eng-5.jpg" alt="Martin Engineering project photo" loading="lazy">
+  <img class="photo h-44 w-full object-cover md:h-72" src="https://martinengineering.in/images/eng-2.jpg" alt="Martin Engineering project photo" loading="lazy">
+  <img class="photo h-44 w-full object-cover md:h-72" src="https://martinengineering.in/images/eng-4.jpg" alt="Martin Engineering project photo" loading="lazy">
+  <img class="photo h-44 w-full object-cover md:h-72" src="https://martinengineering.in/images/eng-3.jpg" alt="Martin Engineering project photo" loading="lazy">
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="grid bg-black text-white lg:grid-cols-12" data-section="contact">
+  <div class="relative px-5 py-20 sm:px-8 lg:col-span-5 lg:py-28 lg:pl-[max(2rem,calc((100vw-1440px)/2+2rem))] lg:pr-12">
+    <h2 class="rv wide text-[clamp(2.6rem,6vw,5.5rem)] font-black leading-none tracking-[-0.035em]">Contact <span class="stroke-w">us</span></h2>
+    <dl class="mt-12 divide-y divide-white/15 border-y border-white/15">
+      <div class="rv py-5">
+        <dt class="text-sm font-semibold text-white/55">E-mail us</dt>
+        <dd class="mt-1 text-lg font-bold"><a class="hover:text-brand" href="mailto:martinengg.gzb@gmail.com" data-track="contact_email">martinengg.gzb@gmail.com</a></dd>
+      </div>
+      <div class="rv py-5" style="--d:.05s">
+        <dt class="text-sm font-semibold text-white/55">Call us</dt>
+        <dd class="mt-1 text-lg font-bold"><a class="hover:text-brand" href="tel:+919811535035" data-track="contact_call_1">+919811535035</a> or <a class="hover:text-brand" href="tel:+919354718898" data-track="contact_call_2">+919354718898</a></dd>
+      </div>
+      <div class="rv py-5" style="--d:.1s">
+        <dt class="text-sm font-semibold text-white/55">Address</dt>
+        <dd class="mt-1 max-w-md text-lg leading-relaxed">AO-133, Amrit Steel Compound, South Side of G.T. Road, UPSIDC Industrial Area, Bulandshahr Road Industrial Area, Ghaziabad, (U.P.) 201009</dd>
+      </div>
+    </dl>
+    <a href="https://wa.me/919811535035" data-track="contact_whatsapp" class="mt-10 inline-block bg-brand px-8 py-4 font-bold transition hover:bg-white hover:text-black">WhatsApp us</a>
+  </div>
+  <div class="relative min-h-[380px] lg:col-span-7">
+    <iframe class="mapframe absolute inset-0 h-full w-full bg-[#111]" title="Martin Engineering location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5569401297676!2d77.43966891541216!3d28.64303819035541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefffdf7d3f61%3A0x4635e5de017df087!2sMartin%20Engineering%20%26Trading%20Co.!5e0!3m2!1sen!2sza!4v1680122153039!5m2!1sen!2sza"></iframe>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/15 bg-black text-white">
+  <div class="mx-auto flex max-w-[1440px] flex-col gap-8 px-5 py-12 sm:px-8 md:flex-row md:items-center md:justify-between">
+    <a href="#" class="inline-block self-start bg-white px-3 py-2" aria-label="Martin Engineering home"><img src="https://martinengineering.in/images/logo.png" alt="Martin Engineering" class="h-10 w-auto"></a>
+    <nav class="flex flex-wrap gap-x-8 gap-y-3 text-sm font-semibold text-white/80" aria-label="Footer">
+      <a class="hover:text-brand" href="https://martinengineering.in/pitless.html">Pitless Type Weighbridges</a>
+      <a class="hover:text-brand" href="https://martinengineering.in/pittype.html">Pit Type RCC Weighbridge</a>
+      <a class="hover:text-brand" href="https://martinengineering.in/tank.html">Tank Weighing System</a>
+      <a class="hover:text-brand" href="https://martinengineering.in/scales.html">Weighing Scales</a>
+      <a class="hover:text-brand" href="https://martinengineering.in/loadcell.html">Loadcell</a>
+    </nav>
+  </div>
+  <div class="border-t border-white/15">
+    <p class="mx-auto max-w-[1440px] px-5 py-5 text-sm text-white/55 sm:px-8">Powered by The Web Hive Copyright © 2022</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/919811535035" data-track="whatsapp_float" class="fixed bottom-5 right-5 z-40 bg-brand px-5 py-3 text-sm font-bold text-white shadow-[4px_4px_0_#fff] transition hover:bg-white hover:text-black sm:hidden">WhatsApp us</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ---------- Mobile menu ---------- */
+(function () {
+  const b = document.getElementById('menuBtn'), m = document.getElementById('mobileNav');
+  b.addEventListener('click', () => {
+    const open = m.classList.toggle('hidden') === false;
+    b.setAttribute('aria-expanded', open);
+  });
+})();
+
+/* ---------- Interaction telemetry ----------
+   Pushes events to window.dataLayer (Google Tag Manager / GA4 compatible):
+   clicks on [data-track] elements, scroll depth, section views. */
+const track = (event, props = {}) => {
+  (window.dataLayer = window.dataLayer || []).push(Object.assign({ event }, props));
+};
+document.addEventListener('click', (e) => {
+  const el = e.target.closest('[data-track]');
+  if (el) track(el.dataset.track, { href: el.getAttribute('href') });
+});
+(function () {
+  const bar = document.getElementById('progress');
+  const hit = { 25: 0, 50: 0, 75: 0, 100: 0 };
+  addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const p = h.scrollTop / ((h.scrollHeight - h.clientHeight) || 1);
+    bar.style.transform = 'scaleX(' + p + ')';
+    [25, 50, 75, 100].forEach((m) => {
+      if (!hit[m] && p * 100 >= m - 1) { hit[m] = 1; track('scroll_depth', { percent: m }); }
+    });
+  }, { passive: true });
+  if ('IntersectionObserver' in window) {
+    const seen = new Set();
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        const id = en.target.dataset.section;
+        if (en.isIntersecting && !seen.has(id)) { seen.add(id); track('section_view', { section: id }); }
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('[data-section]').forEach((s) => io.observe(s));
+  }
+})();
+
+/* ---------- Scroll reveal + card spotlight ---------- */
+(function () {
+  const els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) { els.forEach((e) => e.classList.add('in')); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  els.forEach((e) => io.observe(e));
+  document.querySelectorAll('.pcard').forEach((c) => {
+    c.addEventListener('pointermove', (e) => {
+      const r = c.getBoundingClientRect();
+      c.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+})();
+
+/* ---------- 3D scenes ---------- */
+(function () {
+  if (!window.THREE) return;
+  const V = THREE.Vector3;
+  const WHITE = 0xffffff, RED = 0xe3000f;
+  const lm = (c, o) => new THREE.LineBasicMaterial({ color: c, transparent: o !== undefined && o < 1, opacity: o === undefined ? 1 : o });
+  function wireBox(w, h, d, x, y, z, c, o) {
+    const m = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(w, h, d)), lm(c, o));
+    m.position.set(x, y, z);
+    return m;
+  }
+  function segs(pts, c, o) { return new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(pts), lm(c, o)); }
+  function makeRenderer(host) {
+    let r;
+    try { r = new THREE.WebGLRenderer({ antialias: true, alpha: true }); } catch (e) { return null; }
+    r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    const cv = r.domElement;
+    cv.style.cssText = 'position:absolute;left:0;top:0;display:block;';
+    host.insertBefore(cv, host.firstChild);
+    return r;
+  }
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const ease = (t) => 1 - Math.pow(1 - t, 3);
+  const inout = (t) => t * t * (3 - 2 * t);
+  const clamp = (t) => Math.max(0, Math.min(1, t));
+
+  /* ===== HERO: weighbridge ===== */
+  (function hero() {
+    const host = document.getElementById('scene');
+    if (!host) return;
+    const renderer = makeRenderer(host);
+    if (!renderer) return;
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 300);
+    const root = new THREE.Group();
+    scene.add(root);
+
+    const L = 16, W = 3.4, T = 0.5;
+    root.add(wireBox(L, T, W, 0, 0, 0, WHITE));
+    const p = [];
+    for (let i = 1; i < L; i++) {
+      const x = -L / 2 + i;
+      p.push(new V(x, T / 2, -W / 2), new V(x, T / 2, W / 2));
+      p.push(new V(x, -T / 2, -W / 2), new V(x, -T / 2, W / 2));
+    }
+    [-0.85, 0.85].forEach((z) => p.push(new V(-L / 2, T / 2, z), new V(L / 2, T / 2, z)));
+    root.add(segs(p, WHITE, 0.28));
+
+    [-1, 1].forEach((s) => {
+      const r = wireBox(3, 0.25, W, s * (L / 2 + 1.45), -0.05, 0, WHITE, 0.75);
+      r.rotation.z = -s * 0.1;
+      root.add(r);
+    });
+
+    const cells = [];
+    [-6.5, 0, 6.5].forEach((x) => [-1.4, 1.4].forEach((z) => {
+      root.add(wireBox(0.7, 0.5, 0.7, x, -0.5, z, RED));
+      const fill = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.5, 0.7), new THREE.MeshBasicMaterial({ color: RED, transparent: true, opacity: 0 }));
+      fill.position.set(x, -0.5, z);
+      root.add(fill);
+      cells.push(fill);
+      root.add(wireBox(1.3, 0.8, 1.3, x, -1.15, z, 0x777777));
+    }));
+    root.add(wireBox(L + 2, 0.3, W + 1.6, 0, -1.7, 0, 0x666666));
+    const grid = new THREE.GridHelper(110, 110, 0x3a3a3a, 0x222222);
+    grid.position.y = -1.85;
+    root.add(grid);
+
+    /* red scan frame, sweeps along the truck while weighing */
+    const scan = wireBox(0.06, 6.2, 3.8, 0, 2.4, 0, RED);
+    scan.visible = false;
+    root.add(scan);
+
+    const truck = new THREE.Group();
+    root.add(truck);
+    truck.add(wireBox(11.2, 0.3, 2.2, 0, 1.2, 0, WHITE));
+    truck.add(wireBox(8, 3, 2.4, -1.6, 2.95, 0, WHITE));
+    truck.add(wireBox(2.4, 2.6, 2.3, 4.4, 2.65, 0, WHITE));
+    truck.add(wireBox(1.0, 0.9, 2.34, 5.0, 3.3, 0, RED));
+    const ribs = [];
+    for (let x = -4.6; x <= 1.4; x += 1) [-1.2, 1.2].forEach((z) => ribs.push(new V(x, 1.45, z), new V(x, 4.45, z)));
+    truck.add(segs(ribs, WHITE, 0.25));
+    const wheels = [];
+    [-4.2, -3.0, 4.4].forEach((x) => [-1, 1].forEach((s) => {
+      const piv = new THREE.Group();
+      piv.position.set(x, 0.8, s * 1.1);
+      const cyl = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.CylinderGeometry(0.55, 0.55, 0.4, 16)), lm(WHITE));
+      cyl.rotation.x = Math.PI / 2;
+      piv.add(cyl);
+      piv.add(segs([new V(-0.55, 0, s * 0.21), new V(0.55, 0, s * 0.21), new V(0, -0.55, s * 0.21), new V(0, 0.55, s * 0.21)], RED));
+      truck.add(piv);
+      wheels.push(piv);
+    }));
+
+    /* timeline */
+    const TARGET = 42860, CYCLE = 15;
+    function state(t) {
+      const c = t % CYCLE;
+      let x = 0, w = 0, lit = 0, q = 0, status;
+      if (c < 4.5) { x = -26 + 26 * ease(c / 4.5); status = 'Vehicle approaching'; }
+      else if (c < 5.5) { status = 'Vehicle on platform'; lit = 0.15; }
+      else if (c < 9) {
+        q = (c - 5.5) / 3.5;
+        w = TARGET * inout(q) + (Math.random() - 0.5) * (1 - q) * 600;
+        lit = q; status = 'Weighing';
+      }
+      else if (c < 12) { w = TARGET; lit = 1; status = 'Stable. Ticket ready'; }
+      else {
+        const k = (c - 12) / 3;
+        x = k * k * 28;
+        w = TARGET * (1 - clamp(k * 2.4));
+        lit = 1 - clamp(k * 2); status = 'Vehicle leaving';
+      }
+      return { x, w: Math.max(0, Math.round(w / 10) * 10), lit, status, scanning: status === 'Weighing', q };
+    }
+
+    const elW = document.getElementById('tWeight');
+    const elS = document.getElementById('tStatus');
+    const bars = Array.from(document.querySelectorAll('#tBars .bar'));
+    const share = [0.14, 0.19, 0.17, 0.18, 0.16, 0.16];
+    let lastW = -1, lastS = '';
+    function apply(s, t) {
+      truck.position.x = s.x;
+      wheels.forEach((wh) => { wh.rotation.z = -s.x / 0.55; });
+      cells.forEach((c, i) => { c.material.opacity = s.lit * (0.55 + 0.4 * Math.sin(t * 6 + i)); });
+      scan.visible = s.scanning;
+      if (s.scanning) scan.position.x = -7 + 14 * s.q;
+      if (s.w !== lastW && elW) { elW.textContent = s.w.toLocaleString('en-IN'); lastW = s.w; }
+      if (s.status !== lastS && elS) { elS.textContent = s.status; lastS = s.status; }
+      bars.forEach((b, i) => {
+        const v = s.w ? (s.w / TARGET) * share[i] * 5.2 * (0.96 + 0.04 * Math.sin(t * 9 + i * 2)) : 0;
+        b.style.transform = 'scaleY(' + Math.max(0.04, Math.min(1, v)) + ')';
+      });
+    }
+
+    /* labels pinned to 3D parts */
+    const tmp = new V();
+    const anchors = Array.from(host.querySelectorAll('.tag')).map((el) => {
+      const k = el.dataset.a;
+      const get = {
+        cell: () => tmp.set(6.5, -0.5, 1.75),
+        platform: () => tmp.set(-4.5, 0.25, 1.7),
+        ramp: () => tmp.set(-(L / 2 + 2.6), -0.35, 1.7),
+        truck: () => tmp.set(truck.position.x + 4.4, 3.95, 0.9)
+      }[k];
+      return { el, get };
+    });
+    let W_ = 1, H_ = 1;
+    function placeTags() {
+      root.updateMatrixWorld(true);
+      anchors.forEach((a) => {
+        a.get();
+        root.localToWorld(tmp);
+        tmp.project(camera);
+        const x = (tmp.x * 0.5 + 0.5) * W_, y = (-tmp.y * 0.5 + 0.5) * H_;
+        a.el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px) translateY(-50%)';
+        a.el.style.opacity = (x < 20 || x > W_ - 150 || y < 90 || y > H_ - 60) ? 0 : 1;
+      });
+    }
+
+    const base = new V(20, 11.5, 23.5);
+    const camBase = new V();
+    function resize() {
+      const w = host.clientWidth, h = host.clientHeight;
+      if (!w || !h) return;
+      W_ = w; H_ = h;
+      renderer.setSize(w, h, false);
+      renderer.domElement.style.width = w + 'px';
+      renderer.domElement.style.height = h + 'px';
+      camera.aspect = w / h;
+      const k = Math.max(1, 1.2 / camera.aspect);
+      camBase.copy(base).multiplyScalar(Math.min(k, 1.75));
+      if (camera.aspect > 1.3) root.position.set(5.5, 2.4, 0); else root.position.set(0, 4.2, 0);
+      camera.position.copy(camBase);
+      camera.lookAt(0, 0.4, 0);
+      camera.updateProjectionMatrix();
+    }
+    resize();
+    addEventListener('resize', () => { resize(); if (reduce) { renderer.render(scene, camera); placeTags(); } });
+
+    let tx = 0, cx = 0;
+    addEventListener('pointermove', (e) => { tx = (e.clientX / innerWidth - 0.5) * 0.4; }, { passive: true });
+
+    if (reduce) {
+      apply(state(10), 10);
+      renderer.render(scene, camera);
+      placeTags();
+      return;
+    }
+    let visible = true;
+    if ('IntersectionObserver' in window) new IntersectionObserver((e) => { visible = e[0].isIntersecting; }).observe(host);
+    const t0 = performance.now();
+    function frame(now) {
+      requestAnimationFrame(frame);
+      if (!visible || document.hidden) return;
+      const t = (now - t0) / 1000;
+      apply(state(t), t);
+      const dolly = 1 + 0.45 * (1 - ease(clamp(t / 3)));
+      camera.position.copy(camBase).multiplyScalar(dolly);
+      camera.lookAt(0, 0.4, 0);
+      cx += (tx - cx) * 0.05;
+      root.rotation.y = cx + Math.sin(t * 0.18) * 0.07;
+      renderer.render(scene, camera);
+      placeTags();
+    }
+    requestAnimationFrame(frame);
+  })();
+
+  /* ===== EXPERTISE: wireframe load cell ===== */
+  (function mini() {
+    const host = document.getElementById('mini');
+    if (!host) return;
+    const renderer = makeRenderer(host);
+    if (!renderer) return;
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
+    camera.position.set(0, 3.2, 12.5);
+    camera.lookAt(0, 0, 0);
+    const g = new THREE.Group();
+    scene.add(g);
+    g.add(wireBox(6.4, 1.7, 1.7, 0, 0, 0, WHITE));
+    [-1.15, 1.15].forEach((x) => {
+      const c = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.CylinderGeometry(0.5, 0.5, 1.72, 22)), lm(WHITE, 0.9));
+      c.rotation.x = Math.PI / 2; c.position.set(x, 0, 0); g.add(c);
+    });
+    g.add(wireBox(2.3, 0.34, 1.72, 0, 0, 0, RED));
+    g.add(wireBox(0.9, 0.06, 1.0, 0, 0.88, 0, RED));
+    [-2.45, 2.45].forEach((x) => {
+      const c = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.CylinderGeometry(0.32, 0.32, 1.72, 16)), lm(WHITE, 0.7));
+      c.position.set(x, 0, 0); g.add(c);
+    });
+    const ticks = [];
+    for (let x = -3.2; x <= 3.2; x += 0.4) ticks.push(new V(x, -1.5, 0.9), new V(x, -1.3, 0.9));
+    ticks.push(new V(-3.2, -1.4, 0.9), new V(3.2, -1.4, 0.9));
+    g.add(segs(ticks, RED, 0.9));
+    g.rotation.x = 0.35;
+
+    function resize() {
+      const w = host.clientWidth, h = host.clientHeight;
+      if (!w || !h) return;
+      renderer.setSize(w, h, false);
+      renderer.domElement.style.width = w + 'px';
+      renderer.domElement.style.height = h + 'px';
+      camera.aspect = w / h;
+      camera.position.z = camera.aspect < 1 ? 12.5 / Math.max(camera.aspect, 0.6) * 0.85 : 12.5;
+      camera.updateProjectionMatrix();
+      if (reduce) { g.rotation.y = -0.5; renderer.render(scene, camera); }
+    }
+    resize();
+    addEventListener('resize', resize);
+    if (reduce) return;
+    let visible = false;
+    if ('IntersectionObserver' in window) new IntersectionObserver((e) => { visible = e[0].isIntersecting; }).observe(host);
+    else visible = true;
+    function frame(now) {
+      requestAnimationFrame(frame);
+      if (!visible || document.hidden) return;
+      g.rotation.y = now / 1000 * 0.45;
+      renderer.render(scene, camera);
+    }
+    requestAnimationFrame(frame);
+  })();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "martin-v2",
+  "version": "2.0.0",
+  "description": "Martin Engineering & Trading Co. - Production Website",
+  "scripts": {
+    "dev": "node scripts/build.js && npx sirv dist --port 3000 --dev --single false",
+    "build": "node scripts/build.js",
+    "build:all": "node scripts/optimize-images.js && node scripts/build-og.js && node scripts/build.js",
+    "preview": "npx sirv dist --port 3000 --single false",
+    "lighthouse": "npx lighthouse http://localhost:3000/ --view --output html --output-path ./lighthouse-report.html --throttling-method=devtools"
+  },
+  "keywords": [
+    "weighbridge",
+    "truck-scale",
+    "loadcell",
+    "industrial-scales"
+  ],
+  "author": "Martin Engineering & Trading Co.",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "esbuild": "^0.28.2",
+    "postcss": "^8.5.30",
+    "sharp": "^0.35.5",
+    "sirv-cli": "^3.0.1",
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}

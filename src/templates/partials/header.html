@@ -1,0 +1,72 @@
+<div id="progress" class="fixed left-0 top-0 z-[70] h-[3px] w-full origin-left scale-x-0 bg-brand"></div>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[80] focus:bg-white focus:px-4 focus:py-2 focus:text-black font-bold">Skip to content</a>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-white/10 bg-black/85 text-white backdrop-blur-md">
+  <div class="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8">
+    <a href="/" aria-label="Martin Engineering home" data-track="logo_click" class="bg-white px-3 py-1.5 inline-flex items-center">
+      <picture>
+        <source srcset="/assets/img/logo.avif" type="image/avif">
+        <source srcset="/assets/img/logo.webp" type="image/webp">
+        <img src="/assets/img/logo.png" alt="Martin Engineering &amp; Trading Co." width="150" height="46" class="h-9 w-auto sm:h-10">
+      </picture>
+    </a>
+
+    <nav class="hidden items-center gap-8 text-[15px] font-semibold lg:flex" aria-label="Main Navigation">
+      <a href="/" class="transition hover:text-brand {{NAV_ACTIVE_HOME}}">Home</a>
+      <div class="group relative">
+        <button class="flex items-center gap-1.5 transition hover:text-brand py-2 {{NAV_ACTIVE_PRODUCTS}}" aria-haspopup="true" aria-expanded="false">
+          Products
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg>
+        </button>
+        <div class="invisible absolute left-0 top-full pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+          <div class="w-[340px] border border-white/20 bg-black p-2 shadow-[8px_8px_0_#E3000F]">
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white {{NAV_ACTIVE_PITLESS}}" href="/pitless.html" data-track="nav_pitless">Pitless Type Weighbridges</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white {{NAV_ACTIVE_PITTYPE}}" href="/pittype.html" data-track="nav_pittype">Pit Type RCC Weighbridge</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white {{NAV_ACTIVE_TANK}}" href="/tank.html" data-track="nav_tank">Tank Weighing Systems</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white {{NAV_ACTIVE_SCALES}}" href="/scales.html" data-track="nav_scales">Weighing Scales</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white {{NAV_ACTIVE_LOADCELL}}" href="/loadcell.html" data-track="nav_loadcell">Loadcell</a>
+          </div>
+        </div>
+      </div>
+      <a href="/aboutus.html" class="transition hover:text-brand {{NAV_ACTIVE_ABOUT}}">About Us</a>
+      <a href="/services.html" class="transition hover:text-brand {{NAV_ACTIVE_SERVICES}}">Services</a>
+      <a href="/contactus.html" class="transition hover:text-brand {{NAV_ACTIVE_CONTACT}}">Contact Us</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/919811535035?text=Hello%20Martin%20Engineering%2C%20I%20would%20like%20a%20quote%20for%20a%20weighbridge." data-track="whatsapp_header" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-brand px-5 py-2.5 text-sm font-bold text-white transition hover:bg-white hover:text-black">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.589 1.769.917 2.796.917 3.182 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.766-5.769-5.766zm9.969 5.766c0 5.502-4.478 9.98-9.969 9.98-1.748 0-3.385-.453-4.814-1.246l-5.217 1.368 1.393-5.086c-.896-1.488-1.412-3.232-1.412-5.016 0-5.502 4.478-9.98 9.969-9.98 5.491 0 10.05 4.478 10.05 9.98z"/></svg>
+        WhatsApp us
+      </a>
+      <button id="menuBtn" class="grid h-11 w-11 place-items-center border border-white/60 text-white lg:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M0 1h20M0 7h20M0 13h20"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="hidden border-t border-white/10 bg-black lg:hidden">
+    <div class="mx-auto flex max-w-[1440px] flex-col px-5 py-4 text-base font-semibold sm:px-8">
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_HOME}}" href="/">Home</a>
+      <div class="border-b border-white/10 py-3">
+        <span class="text-xs uppercase tracking-wider text-white/50 block mb-2 font-bold">Products</span>
+        <div class="flex flex-col pl-3 border-l-2 border-brand/50 space-y-2 text-sm">
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_PITLESS}}" href="/pitless.html">Pitless Type Weighbridges</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_PITTYPE}}" href="/pittype.html">Pit Type RCC Weighbridge</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_TANK}}" href="/tank.html">Tank Weighing Systems</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_SCALES}}" href="/scales.html">Weighing Scales</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_LOADCELL}}" href="/loadcell.html">Loadcell</a>
+        </div>
+      </div>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_ABOUT}}" href="/aboutus.html">About Us</a>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_SERVICES}}" href="/services.html">Services</a>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_CONTACT}}" href="/contactus.html">Contact Us</a>
+      <div class="pt-4 pb-2">
+        <a class="flex items-center justify-center gap-2 bg-brand py-3 text-center font-bold text-white transition hover:bg-white hover:text-black" href="https://wa.me/919811535035?text=Hello%20Martin%20Engineering%2C%20I%20would%20like%20a%20quote%20for%20a%20weighbridge." data-track="whatsapp_mobile_menu">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.589 1.769.917 2.796.917 3.182 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.766-5.769-5.766zm9.969 5.766c0 5.502-4.478 9.98-9.969 9.98-1.748 0-3.385-.453-4.814-1.246l-5.217 1.368 1.393-5.086c-.896-1.488-1.412-3.232-1.412-5.016 0-5.502 4.478-9.98 9.969-9.98 5.491 0 10.05 4.478 10.05 9.98z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

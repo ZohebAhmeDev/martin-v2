@@ -1,0 +1,29 @@
+{
+  "name": "Martin Engineering & Trading Co.",
+  "short_name": "Martin Engg",
+  "description": "Leading ISO 9001:2015 certified manufacturer of industrial weighbridges, electronic platform scales, and compression tank weighing systems in India.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "icons": [
+    {
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
