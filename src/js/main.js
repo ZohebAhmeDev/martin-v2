@@ -204,7 +204,7 @@ document.addEventListener('click', (e) => {
     if (bundleLoaded) return;
     bundleLoaded = true;
     const script = document.createElement('script');
-    script.src = '/assets/js/three-scene.bundle.js';
+    script.src = 'assets/js/three-scene.bundle.js';
     script.type = 'module';
     script.async = true;
     document.body.appendChild(script);
@@ -234,7 +234,7 @@ document.addEventListener('click', (e) => {
 (function initSW() {
   if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js').then((reg) => {
+      navigator.serviceWorker.register('./sw.js').then((reg) => {
         // Registration successful
       }).catch((err) => {
         // Registration failed

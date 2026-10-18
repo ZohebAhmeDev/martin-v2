@@ -499,7 +499,7 @@ pages.forEach(p => {
     .replace('{{NAV_ACTIVE_CONTACT}}', p.activeNav === 'contact' ? 'text-brand' : '');
 
   // Assemble Complete Document
-  const fullHtml = `<!doctype html>
+  let fullHtml = `<!doctype html>
 <html lang="en-IN">
 <head>
 ${head}
@@ -509,9 +509,17 @@ ${header}
 ${pageBody}
 ${footerPartial}
 ${bottomBarPartial}
-<script src="/assets/js/main.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>`;
+
+  // Make all root-relative paths portable so the site works on GitHub Pages subpaths (/martin-v2/), root domains, and localhost
+  fullHtml = fullHtml
+    .replace(/(href|src|srcset)="\/assets\//g, '$1="assets/')
+    .replace(/href="\/(aboutus|contactus|services|pitless|pittype|tank|scales|loadcell|thankyou|404|offline)\.html"/g, 'href="$1.html"')
+    .replace(/href="\/(#products)?"/g, (match, hash) => hash ? 'href="./#products"' : 'href="./"')
+    .replace(/href="\/manifest\.webmanifest"/g, 'href="manifest.webmanifest"')
+    .replace(/href="\/favicon\.ico"/g, 'href="favicon.ico"');
 
   fs.writeFileSync(path.join(DIST_DIR, p.filename), fullHtml, 'utf8');
   console.log(`Generated HTML: dist/${p.filename}`);

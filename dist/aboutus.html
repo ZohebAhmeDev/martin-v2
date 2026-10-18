@@ -11,15 +11,15 @@
 <meta name="robots" content="index, follow">
 
 <!-- Preload critical self-hosted variable font (Latin subset, woff2) -->
-<link rel="preload" href="/assets/fonts/archivo-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- PWA Manifest & Icons -->
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
 
 <!-- Open Graph & Social Cards -->
 <meta property="og:type" content="website">
@@ -40,7 +40,7 @@
 <meta name="twitter:image" content="https://martinengineering.in/assets/img/og/og-about.jpg">
 
 <!-- Compiled & Purged Tailwind CSS -->
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
@@ -58,16 +58,16 @@
 <!-- HEADER -->
 <header class="sticky top-0 z-50 border-b border-white/10 bg-black/85 text-white backdrop-blur-md">
   <div class="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8">
-    <a href="/" aria-label="Martin Engineering home" data-track="logo_click" class="bg-white px-3 py-1.5 inline-flex items-center">
+    <a href="./" aria-label="Martin Engineering home" data-track="logo_click" class="bg-white px-3 py-1.5 inline-flex items-center">
       <picture>
-        <source srcset="/assets/img/logo.avif" type="image/avif">
-        <source srcset="/assets/img/logo.webp" type="image/webp">
-        <img src="/assets/img/logo.png" alt="Martin Engineering &amp; Trading Co." width="150" height="46" class="h-9 w-auto sm:h-10">
+        <source srcset="assets/img/logo.avif" type="image/avif">
+        <source srcset="assets/img/logo.webp" type="image/webp">
+        <img src="assets/img/logo.png" alt="Martin Engineering &amp; Trading Co." width="150" height="46" class="h-9 w-auto sm:h-10">
       </picture>
     </a>
 
     <nav class="hidden items-center gap-8 text-[15px] font-semibold lg:flex" aria-label="Main Navigation">
-      <a href="/" class="transition hover:text-brand ">Home</a>
+      <a href="./" class="transition hover:text-brand ">Home</a>
       <div class="group relative">
         <button class="flex items-center gap-1.5 transition hover:text-brand py-2 " aria-haspopup="true" aria-expanded="false">
           Products
@@ -75,17 +75,17 @@
         </button>
         <div class="invisible absolute left-0 top-full pt-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
           <div class="w-[340px] border border-white/20 bg-black p-2 shadow-[8px_8px_0_#E3000F]">
-            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="/pitless.html" data-track="nav_pitless">Pitless Type Weighbridges</a>
-            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="/pittype.html" data-track="nav_pittype">Pit Type RCC Weighbridge</a>
-            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="/tank.html" data-track="nav_tank">Tank Weighing Systems</a>
-            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="/scales.html" data-track="nav_scales">Weighing Scales</a>
-            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="/loadcell.html" data-track="nav_loadcell">Loadcell</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="pitless.html" data-track="nav_pitless">Pitless Type Weighbridges</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="pittype.html" data-track="nav_pittype">Pit Type RCC Weighbridge</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="tank.html" data-track="nav_tank">Tank Weighing Systems</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="scales.html" data-track="nav_scales">Weighing Scales</a>
+            <a class="block px-4 py-3 transition hover:bg-brand hover:text-white " href="loadcell.html" data-track="nav_loadcell">Loadcell</a>
           </div>
         </div>
       </div>
-      <a href="/aboutus.html" class="transition hover:text-brand text-brand">About Us</a>
-      <a href="/services.html" class="transition hover:text-brand ">Services</a>
-      <a href="/contactus.html" class="transition hover:text-brand ">Contact Us</a>
+      <a href="aboutus.html" class="transition hover:text-brand text-brand">About Us</a>
+      <a href="services.html" class="transition hover:text-brand ">Services</a>
+      <a href="contactus.html" class="transition hover:text-brand ">Contact Us</a>
     </nav>
 
     <div class="flex items-center gap-3">
@@ -101,20 +101,20 @@
 
   <div id="mobileNav" class="hidden border-t border-white/10 bg-black lg:hidden">
     <div class="mx-auto flex max-w-[1440px] flex-col px-5 py-4 text-base font-semibold sm:px-8">
-      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_HOME}}" href="/">Home</a>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_HOME}}" href="./">Home</a>
       <div class="border-b border-white/10 py-3">
         <span class="text-xs uppercase tracking-wider text-white/50 block mb-2 font-bold">Products</span>
         <div class="flex flex-col pl-3 border-l-2 border-brand/50 space-y-2 text-sm">
-          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_PITLESS}}" href="/pitless.html">Pitless Type Weighbridges</a>
-          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_PITTYPE}}" href="/pittype.html">Pit Type RCC Weighbridge</a>
-          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_TANK}}" href="/tank.html">Tank Weighing Systems</a>
-          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_SCALES}}" href="/scales.html">Weighing Scales</a>
-          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_LOADCELL}}" href="/loadcell.html">Loadcell</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_PITLESS}}" href="pitless.html">Pitless Type Weighbridges</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_PITTYPE}}" href="pittype.html">Pit Type RCC Weighbridge</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_TANK}}" href="tank.html">Tank Weighing Systems</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_SCALES}}" href="scales.html">Weighing Scales</a>
+          <a class="py-1.5 transition hover:text-brand {{NAV_ACTIVE_LOADCELL}}" href="loadcell.html">Loadcell</a>
         </div>
       </div>
-      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_ABOUT}}" href="/aboutus.html">About Us</a>
-      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_SERVICES}}" href="/services.html">Services</a>
-      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_CONTACT}}" href="/contactus.html">Contact Us</a>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_ABOUT}}" href="aboutus.html">About Us</a>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_SERVICES}}" href="services.html">Services</a>
+      <a class="border-b border-white/10 py-3.5 transition hover:text-brand {{NAV_ACTIVE_CONTACT}}" href="contactus.html">Contact Us</a>
       <div class="pt-4 pb-2">
         <a class="flex items-center justify-center gap-2 bg-brand py-3 text-center font-bold text-white transition hover:bg-white hover:text-black" href="https://wa.me/919811535035?text=Hello%20Martin%20Engineering%2C%20I%20would%20like%20a%20quote%20for%20a%20weighbridge." data-track="whatsapp_mobile_menu">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.589 1.769.917 2.796.917 3.182 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.766-5.769-5.766zm9.969 5.766c0 5.502-4.478 9.98-9.969 9.98-1.748 0-3.385-.453-4.814-1.246l-5.217 1.368 1.393-5.086c-.896-1.488-1.412-3.232-1.412-5.016 0-5.502 4.478-9.98 9.969-9.98 5.491 0 10.05 4.478 10.05 9.98z"/></svg>
@@ -139,7 +139,7 @@
   <div class="relative mx-auto max-w-[1440px] px-5 sm:px-8">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="mb-6 flex items-center gap-2 text-xs font-semibold text-white/60">
-      <a href="/" class="hover:text-brand transition">Home</a>
+      <a href="./" class="hover:text-brand transition">Home</a>
       <span>/</span>
       <span class="text-brand">About Us</span>
     </nav>
@@ -165,9 +165,9 @@
         <div class="relative">
           <div class="absolute -bottom-4 -left-4 h-full w-full bg-brand -z-10" aria-hidden="true"></div>
           <picture>
-            <source srcset="/assets/img/martin-factory.avif" type="image/avif">
-            <source srcset="/assets/img/martin-factory.webp" type="image/webp">
-            <img src="/assets/img/martin-factory.png" alt="Martin Engineering manufacturing plant in Ghaziabad" width="580" height="420" class="w-full bg-black object-cover cut" loading="eager">
+            <source srcset="assets/img/martin-factory.avif" type="image/avif">
+            <source srcset="assets/img/martin-factory.webp" type="image/webp">
+            <img src="assets/img/martin-factory.png" alt="Martin Engineering manufacturing plant in Ghaziabad" width="580" height="420" class="w-full bg-black object-cover cut" loading="eager">
           </picture>
         </div>
 
@@ -205,7 +205,7 @@
         </div>
 
         <div class="mt-12 flex flex-wrap items-center gap-4">
-          <a href="/contactus.html" data-track="about_contact_btn" class="bg-brand px-8 py-4 font-bold text-white transition hover:bg-black hover:text-white">
+          <a href="contactus.html" data-track="about_contact_btn" class="bg-brand px-8 py-4 font-bold text-white transition hover:bg-black hover:text-white">
             Contact Engineering Team
           </a>
           <a href="https://wa.me/919811535035?text=Hello%20Martin%20Engineering%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20company%20and%20products." data-track="about_whatsapp_btn" target="_blank" rel="noopener noreferrer" class="border border-black px-8 py-4 font-bold text-black transition hover:bg-brand hover:border-brand hover:text-white">
@@ -220,24 +220,24 @@
 <!-- PROJECT PHOTO STRIP -->
 <section class="grid grid-cols-2 bg-black md:grid-cols-4" aria-label="Martin Engineering Installations">
   <picture>
-    <source srcset="/assets/img/eng-5.avif" type="image/avif">
-    <source srcset="/assets/img/eng-5.webp" type="image/webp">
-    <img class="photo h-44 w-full object-cover md:h-72" src="/assets/img/eng-5.jpg" alt="Weighbridge installation at client facility" width="400" height="300" loading="lazy">
+    <source srcset="assets/img/eng-5.avif" type="image/avif">
+    <source srcset="assets/img/eng-5.webp" type="image/webp">
+    <img class="photo h-44 w-full object-cover md:h-72" src="assets/img/eng-5.jpg" alt="Weighbridge installation at client facility" width="400" height="300" loading="lazy">
   </picture>
   <picture>
-    <source srcset="/assets/img/eng-2.avif" type="image/avif">
-    <source srcset="/assets/img/eng-2.webp" type="image/webp">
-    <img class="photo h-44 w-full object-cover md:h-72" src="/assets/img/eng-2.jpg" alt="Steel fabrication of weighbridge girders" width="400" height="300" loading="lazy">
+    <source srcset="assets/img/eng-2.avif" type="image/avif">
+    <source srcset="assets/img/eng-2.webp" type="image/webp">
+    <img class="photo h-44 w-full object-cover md:h-72" src="assets/img/eng-2.jpg" alt="Steel fabrication of weighbridge girders" width="400" height="300" loading="lazy">
   </picture>
   <picture>
-    <source srcset="/assets/img/eng-4.avif" type="image/avif">
-    <source srcset="/assets/img/eng-4.webp" type="image/webp">
-    <img class="photo h-44 w-full object-cover md:h-72" src="/assets/img/eng-4.jpg" alt="Truck scale testing on site" width="400" height="300" loading="lazy">
+    <source srcset="assets/img/eng-4.avif" type="image/avif">
+    <source srcset="assets/img/eng-4.webp" type="image/webp">
+    <img class="photo h-44 w-full object-cover md:h-72" src="assets/img/eng-4.jpg" alt="Truck scale testing on site" width="400" height="300" loading="lazy">
   </picture>
   <picture>
-    <source srcset="/assets/img/eng-3.avif" type="image/avif">
-    <source srcset="/assets/img/eng-3.webp" type="image/webp">
-    <img class="photo h-44 w-full object-cover md:h-72" src="/assets/img/eng-3.jpg" alt="Truck being weighed on pitless weighbridge" width="400" height="300" loading="lazy">
+    <source srcset="assets/img/eng-3.avif" type="image/avif">
+    <source srcset="assets/img/eng-3.webp" type="image/webp">
+    <img class="photo h-44 w-full object-cover md:h-72" src="assets/img/eng-3.jpg" alt="Truck being weighed on pitless weighbridge" width="400" height="300" loading="lazy">
   </picture>
 </section>
 
@@ -249,11 +249,11 @@
     <div class="grid gap-12 lg:grid-cols-12">
       <!-- Column 1: Brand & Credentials -->
       <div class="lg:col-span-4">
-        <a href="/" class="inline-block bg-white px-3 py-2" aria-label="Martin Engineering home">
+        <a href="./" class="inline-block bg-white px-3 py-2" aria-label="Martin Engineering home">
           <picture>
-            <source srcset="/assets/img/logo.avif" type="image/avif">
-            <source srcset="/assets/img/logo.webp" type="image/webp">
-            <img src="/assets/img/logo.png" alt="Martin Engineering &amp; Trading Co." width="160" height="49" class="h-10 w-auto">
+            <source srcset="assets/img/logo.avif" type="image/avif">
+            <source srcset="assets/img/logo.webp" type="image/webp">
+            <img src="assets/img/logo.png" alt="Martin Engineering &amp; Trading Co." width="160" height="49" class="h-10 w-auto">
           </picture>
         </a>
         <p class="mt-6 text-sm leading-relaxed text-white/70">
@@ -272,11 +272,11 @@
           Weighbridge Products
         </h3>
         <ul class="mt-5 space-y-3 text-sm font-semibold text-white/80">
-          <li><a class="transition hover:text-brand" href="/pitless.html">Pitless Type Weighbridges</a></li>
-          <li><a class="transition hover:text-brand" href="/pittype.html">Pit Type RCC Weighbridge</a></li>
-          <li><a class="transition hover:text-brand" href="/tank.html">Tank Weighing Systems</a></li>
-          <li><a class="transition hover:text-brand" href="/scales.html">Weighing Scales Catalog</a></li>
-          <li><a class="transition hover:text-brand" href="/loadcell.html">Industrial Loadcells</a></li>
+          <li><a class="transition hover:text-brand" href="pitless.html">Pitless Type Weighbridges</a></li>
+          <li><a class="transition hover:text-brand" href="pittype.html">Pit Type RCC Weighbridge</a></li>
+          <li><a class="transition hover:text-brand" href="tank.html">Tank Weighing Systems</a></li>
+          <li><a class="transition hover:text-brand" href="scales.html">Weighing Scales Catalog</a></li>
+          <li><a class="transition hover:text-brand" href="loadcell.html">Industrial Loadcells</a></li>
         </ul>
       </div>
 
@@ -287,11 +287,11 @@
           Company
         </h3>
         <ul class="mt-5 space-y-3 text-sm font-semibold text-white/80">
-          <li><a class="transition hover:text-brand" href="/">Home</a></li>
-          <li><a class="transition hover:text-brand" href="/aboutus.html">About Us</a></li>
-          <li><a class="transition hover:text-brand" href="/services.html">Services &amp; AMC</a></li>
-          <li><a class="transition hover:text-brand" href="/contactus.html">Contact Us</a></li>
-          <li><a class="transition hover:text-brand" href="/sitemap.xml">XML Sitemap</a></li>
+          <li><a class="transition hover:text-brand" href="./">Home</a></li>
+          <li><a class="transition hover:text-brand" href="aboutus.html">About Us</a></li>
+          <li><a class="transition hover:text-brand" href="services.html">Services &amp; AMC</a></li>
+          <li><a class="transition hover:text-brand" href="contactus.html">Contact Us</a></li>
+          <li><a class="transition hover:text-brand" href="sitemap.xml">XML Sitemap</a></li>
         </ul>
       </div>
 
@@ -336,7 +336,7 @@
     <span class="mt-1 text-[11px] font-bold tracking-wide text-white">WhatsApp</span>
   </a>
 
-  <a href="/contactus.html" data-track="mobile_bar_quote" class="flex flex-1 flex-col items-center justify-center py-2.5 transition active:bg-white/10" aria-label="Get Quote Online">
+  <a href="contactus.html" data-track="mobile_bar_quote" class="flex flex-1 flex-col items-center justify-center py-2.5 transition active:bg-white/10" aria-label="Get Quote Online">
     <svg class="h-5 w-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
     </svg>
@@ -344,6 +344,6 @@
   </a>
 </nav>
 
-<script src="/assets/js/main.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
